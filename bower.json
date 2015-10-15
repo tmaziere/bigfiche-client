@@ -1,0 +1,25 @@
+{
+  "name": "bigfiche-client",
+  "version": "0.0.0",
+  "authors": [
+    "Thomas Maziere <thomas.maziere@incaya.fr>",
+    "Thomas Berriot <thomas.berriot@incaya.fr>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.4.7",
+    "angular": "~1.4.7",
+    "topcoat": "~0.8.0"
+  }
+}
