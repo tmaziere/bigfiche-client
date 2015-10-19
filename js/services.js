@@ -30,14 +30,14 @@ G.factory('httpG', ['$http', '$window', function ($http, $window) {
  
         get: function (uri, params) {
             params = params || {};
-            params['_token'] = serviceToken || null;
-            return $http.get(serviceHost + uri, {headers: {'X-Access-Token': 'Bearer '+serviceToken}});
+            return $http.get(serviceHost + uri, {headers: {'X-Access-Token': 'Bearer '+serviceToken}}, {params: params});
         },
  
         post: function (uri, params) {
             params = params || {};
-            params['_token'] = serviceToken || null;
-            return $http.post(serviceHost + uri, {params: params, headers: {'X-Access-Token': 'Bearer '+serviceToken}});
+            params['_token'] = serviceToken;
+ 
+            return $http.post(serviceHost + uri, params);
         }
     };
 }]);
